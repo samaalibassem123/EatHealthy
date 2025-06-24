@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <header className="p-2 ">
-        <Button effect={"gradientSlideShow"} className="float-right">
+        <Button effect={"shine"} className="float-right">
           <Link href={"/auth/login"}>Login</Link>
         </Button>
       </header>
