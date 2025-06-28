@@ -25,7 +25,7 @@ export function SectionCards() {
         ChartData={{
           title: " Carb",
           Desc: "desc",
-          hit: 500,
+          hit: 250,
           goal: 2500,
           type: "g / Carb",
         }}
