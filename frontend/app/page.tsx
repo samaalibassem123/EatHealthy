@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Magnetic } from "@/components/ui/magnetic";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -6,9 +7,11 @@ export default function Home() {
   return (
     <>
       <header className="p-2 ">
-        <Button effect={"shine"} className="float-right" asChild>
-          <Link href={"/auth/login"}>Login</Link>
-        </Button>
+        <Magnetic>
+          <Button effect={"shine"} className="float-right" asChild>
+            <Link href={"/auth/login"}>Login</Link>
+          </Button>
+        </Magnetic>
       </header>
       <main className="flex sm:flex-row flex-col h-svh sm:items-center  p-4 sm:justify-center justify-around w-full space-y-3.5">
         <div className="sm:w-1/2 space-y-3">
@@ -26,15 +29,17 @@ export default function Home() {
           transform your plate and your lifestyle? Let’s make healthy eating
           easy — and fun — together!
         </div>
-        <Button
-          effect="expandIcon"
-          icon={ArrowRightIcon}
-          iconPlacement="right"
-          className=" text-2xl  p-10"
-          asChild
-        >
-          <Link href="/auth/register"> Let's Get Started</Link>
-        </Button>
+        <Magnetic>
+          <Button
+            effect="expandIcon"
+            icon={ArrowRightIcon}
+            iconPlacement="right"
+            className=" text-2xl  p-10"
+            asChild
+          >
+            <Link href="/auth/register"> Let's Get Started</Link>
+          </Button>
+        </Magnetic>
       </main>
     </>
   );

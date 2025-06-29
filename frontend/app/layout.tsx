@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning >
+    <html lang="en" suppressHydrationWarning>
       <body className={oxanium.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           {children}

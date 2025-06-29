@@ -33,7 +33,7 @@ export function ChartRadialText(ChartData: { ChartData: ChartProps }) {
   const chartData = [
     {
       browser: "safari",
-      value: ChartData.ChartData.hit * 360 /ChartData.ChartData.goal,
+      value: (ChartData.ChartData.hit * 360) / ChartData.ChartData.goal,
       fill: "var(--color-safari)",
     },
   ];
@@ -51,7 +51,7 @@ export function ChartRadialText(ChartData: { ChartData: ChartProps }) {
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
         <CardTitle>{ChartData.ChartData.title}</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardDescription>{ChartData.ChartData.Desc}</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
